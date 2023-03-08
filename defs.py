@@ -4,6 +4,7 @@ def pula_linha():
     print('')
 
 def menu():
+    terminal_limpo()
     titulo = '\33[5;97mBANCO SHPC\33[m'
     print('*' * 45)
     print('*' + ' ' * 43 + '*')
