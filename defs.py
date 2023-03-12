@@ -1,3 +1,4 @@
+from cadastro import Cadastro
 from os import system, name
 
 def pula_linha():
@@ -5,7 +6,7 @@ def pula_linha():
 
 def menu():
     terminal_limpo()
-    titulo = '\33[5;97mBANCO SHPC\33[m'
+    titulo = '\33[4;97mBANCO SHPC\33[m'
     print('*' * 45)
     print('*' + ' ' * 43 + '*')
     print('*' + titulo.center(53) + '*')
@@ -29,7 +30,7 @@ def terminal_limpo():
     else:
         _ = system('clear')
 
-def novo_usuario():
+def cadastro():
     terminal_limpo()
     titulo = '\33[5;97mCADASTRO\33[m'
     print('*' * 45)
@@ -46,5 +47,16 @@ def novo_usuario():
         ''')
     print('*' * 45)
     pula_linha()
+    x = input('\33[7;49;96mOPÇÃO:\33[m ')
+    return x
+
+def novo_usuario():
+    usuario = Cadastro()
+    print(usuario.dados)
+    print('''
+DESEJA ARMAZENAR OS DADOS?
+1 - SIM
+2 - NÃO
+    ''')
     x = input('\33[7;49;96mOPÇÃO:\33[m ')
     return x
