@@ -60,3 +60,15 @@ DESEJA ARMAZENAR OS DADOS?
     ''')
     x = input('\33[7;49;96mOPÇÃO:\33[m ')
     return x
+
+def transacoes():
+    terminal_limpo()
+    titulo = '\33[5;97mTRANSAÇÕES\33[m'
+    print('*' * 45)
+    print('*' + ' ' * 43 + '*')
+    print('*' + titulo.center(53) + '*')
+    print('*' + ' ' * 43 + '*')
+    print('*' * 45)
+    print('''
+\33[1;91m|\33[m ===== \33[1;49;93m>>>>>\33[m    EM DESENVOLVIMENTO    \33[1;49;93m<<<<<\33[m ===== \33[1;91m|\33[m
+    ''')
